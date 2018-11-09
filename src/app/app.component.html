@@ -1,3 +1,27 @@
-<div>
-  <h2>Test pwa app</h2>
+<div class="text-center card-body">
+  <div class="card-header">
+    <h2>Test pwa app</h2>
+    <input (change)="myUploader($event)" type="file" accept="image/*">
+  </div>
+  <div class="card-body" >
+    <img #picture id="image" class="responsive" [src]="imageSrc">
+
+    <br>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="1" [y]="1"></image-part>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="1" [y]="2"></image-part>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="1" [y]="3"></image-part>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="1" [y]="4"></image-part>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="2" [y]="1"></image-part>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="2" [y]="2"></image-part>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="2" [y]="3"></image-part>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="2" [y]="4"></image-part>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="3" [y]="1"></image-part>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="3" [y]="2"></image-part>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="3" [y]="3"></image-part>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="3" [y]="4"></image-part>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="4" [y]="1"></image-part>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="4" [y]="2"></image-part>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="4" [y]="3"></image-part>
+    <image-part [pictureBox]="picture" [image]="imageRendered" [x]="4" [y]="4"></image-part>
+  </div>
 </div>
